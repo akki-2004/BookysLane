@@ -5,11 +5,12 @@ import { Button, Navbar } from 'react-bootstrap'
 import { Route, Routes } from 'react-router-dom'
 import Register from './pages/Register'
 import Login from './pages/Login'
-import NavBar from './components/Navbar'
+// import NavBar from './components/Navbar'
 import ListBooks from './pages/ListBooks'
 import Home from './pages/Home'
 import BookDetails from './components/BookDetails'
 import CartPage from './components/CartPage'
+import MyNavbar from './components/MyNavbar'
 
 function App() {
 
@@ -17,7 +18,7 @@ function App() {
   return (
     <>
       <div >
-        <NavBar/>
+        <MyNavbar/>
         <Routes>
           <Route path ="/" element={<Home/>}/>
           <Route path ="/login" element={<Login/>}/>
